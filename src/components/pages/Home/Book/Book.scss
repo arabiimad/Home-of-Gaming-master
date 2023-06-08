@@ -1,0 +1,69 @@
+.bookk {
+  padding: 50px 0;
+
+  
+  .main-text {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+  }
+
+  .row {
+    flex-wrap: nowrap;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .col-lg-5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        text-align: center;
+        align-items: center;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+    }
+
+    .cardphoto {
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 30px;
+        
+      }
+
+      .carousel-item {
+        height: 600px;
+        
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.Underposts {
+  max-width: 30%; /* Set a maximum width for the image */
+}
+
+@media (max-width: 768px) {
+  /* Styles to be applied when the screen width is 768px or smaller */
+  .Underposts {
+    max-width: 80%; /* Adjust the maximum width as per your requirements */
+  }
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');/* Section Services Start */
+.services {
+    margin-top: 50px;
+    
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px 0 rgba(24, 74, 237, 0.58);
+      cursor: pointer;
+      height: 200px;
+      background-color: #3d3d3e;
+      
+      img {
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      & .img-clv {
+        width: 120px;
+        margin-right: 15px;
+      }
+      
+      .card-body {
+        text-align: center;
+        
+        table {
+          text-align: center;
+          
+          p {
+            margin-top: 25px;
+            font-size: 74px;
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+    }
+    
+    .prg {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+    
+    .ic-text h1 {
+      text-align: center;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 120px;
+      color: #fff;
+    }
+  }
+  
+  
+  $font-family: 'Inter', sans-serif;
+  @mixin bold {
+    font-weight: 700;
+  }
+  
+  .materiel {
+    color: #fff;
+    font-size: 12px;
+    font-family: $font-family;
+    @include bold;
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 767px) {
+    .services {
+      .card {
+        height: auto;
+        
+        img {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        
+        & .img-clv {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        
+        .card-body {
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  

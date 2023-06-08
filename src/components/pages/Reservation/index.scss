@@ -1,0 +1,155 @@
+
+
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,500,400,300,800);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
+
+body{ 
+    background-color:#f0f3f6;
+    overflow-x: hidden;
+
+}
+h1,h2,h3,h4,h5,h6,div,input,p,a{
+    font-family: "Open Sans";  
+    margin:0px; 
+}
+
+h3{ 
+    font-size:22px;
+}
+.container-fluid,.container { 
+    margin:auto;
+  padding:0px 10px;
+  max-width:1200px;
+}
+label{
+  font-weight:500;
+}
+.form-group{
+  margin-bottom:5px;
+}
+
+
+input,textarea,select,button{ 
+    margin: 5px 0px ;
+    font-size:13px !important; 
+    border-radius:0px;
+}
+input[type=text],input[type=password],textarea,input[type=email],select,textarea{ 
+    width: 100%; 
+    border:1px solid #DADADA; 
+    padding: 5px 10px;  
+    height:45px;  
+}
+input[type=submit],input[type=button],input[type=reset],button{
+    border:none; 
+    font-size: 11px;  
+  border-radius:3px;
+  height:45px;
+  color:#FFF;
+}
+
+.btn:hover,.btn:focus{  
+    cursor:pointer; 
+    color:#FFF;
+}
+input[type=radio]{
+    margin:0px;
+    padding:0px; 
+    height:auto;
+}
+.form-control{ 
+    box-shadow:none !important;  
+  border-radius:0px;
+}
+.form-control:focus{
+    border:1px solid #CCC;
+}
+.btn:focus{
+  box-shadow:none !important;
+}
+
+textarea{ 
+    width: 100%;
+}
+input[type=reset]{ 
+    margin-left: 10px;
+}
+textarea{
+  min-height:100px;
+}
+a{ 
+    color: inherit;
+}
+a:hover,a:focus{ 
+    text-decoration: none !important; 
+    color: inherit !important;
+}
+
+.reservation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        max-width: 500px;
+        margin: 2rem 0;
+        padding: 2rem;
+        border-radius: 8px;
+        ;
+        box-shadow: 0px 0px 10px rgba(255, 128, 128, 0.1);
+
+        input {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        button {
+          padding: 17px 40px;
+          ;
+          border: 0;
+          background-color:#0465e3;
+          box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          font-size: 15px;
+          transition: all .5s ease;
+         }
+         
+         button:hover {
+          letter-spacing: 3px;
+          background-color:#ff0606af;
+          color: hsl(0, 0%, 100%);
+          box-shadow: rgb(138, 0, 0) 0px 7px 29px 0px;
+         }
+         
+         button:active {
+          letter-spacing: 3px;
+          background-color: hsl(147, 50%, 47%);
+          color: hsl(0, 0%, 100%);
+          box-shadow: rgb(0 153 0) 0px 7px 29px 0px;
+          transform: translateY(10px);
+          transition: 100ms;
+         }
+    }
+}
+@media (min-width: 992px) {
+  .tarif-container, .reservation-container {
+    width: 50%;
+    float: left;
+  }
+}
